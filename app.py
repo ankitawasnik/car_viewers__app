@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Load your dataset here
 @st.cache_data
 def load_data():
-    df = pd.read_csv('your_dataset.csv')  # Replace with your actual file path
+    df = pd.read_csv('CARS.csv')  # Replace with your actual file path
     df['MSRP'] = df['MSRP'].str.replace('[$,]', '', regex=True).astype('int64')
     return df
 
